@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="moviestyle2.css">
+    
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    
+    <div>
+      <img class="main-logo" src="./image/netflix.png"/>
+    </div>
+
+     
+    <div class="movie-container">
+      <label style="font-size: 1em;">Pick a movie:</label>
+      <select id="movie">
+        <option value="10">Jurassic Park (Rs10)</option>
+        <option value="12">Logan (Rs12)</option>
+        <option value="8">Avengers Infinity War (Rs8)</option>
+		<option value="10">Terminator Genesis (Rs10)</option>
+        <option value="12">Baazigar (Rs12)</option>
+        <option value="8">Lagaan (Rs8)</option>
+		<option value="10">Tanhaji-Unusung Hero (Rs10)</option>
+        <option value="12">Flight (Rs12)</option>
+        <option value="8">WHY-CHEAT  (Rs8)</option>
+		<option value="10">James Bond (Rs10)</option>
+        <option value="12">PIKU (Rs12)</option>
+        <option value="8">Happy New Year</option>
+		<option value="10">Raid (Rs10)</option>
+        <option value="12">CHAK-DE-INDIA</option>
+        <option value="8">ROMEO-AKBAR-WALTER (Rs8)</option>
+		<option value="10">OM-SHANTI-OM (Rs10)</option>
+        <option value="12">BAHUBALI-2(Rs12)</option>
+        <option value="8">BHARATH(Rs8)</option>
+		<option value="10">Chennai Express (Rs10)</option>
+        <option value="12">Firangi(Rs12)</option>
+        <option value="8">Junglee (Rs8)</option>
+		<option value="10">SIMBBA (Rs10)</option>
+        <option value="12">MOHENJODARAO (Rs12)</option>
+        <option value="8">SULTAN (Rs8)</option>
+		<option value="10">TU-MERA22 (Rs10)</option>
+        <option value="12">ANGREJ (Rs12)</option>
+        <option value="8">ASHKE (Rs8)</option>
+		<option value="10">ATE-DI-CHIRI (Rs10)</option>
+        <option value="12">BAMABUKAT (Rs12)</option>
+        <option value="8">BHALWAN SINGH (Rs8)</option>
+		<option value="10">Fallen Kingdom (Rs10)</option>
+        <option value="12">Lahoriye (Rs12)</option>
+        <option value="8">Love Punjab (Rs8)</option>
+		<option value="10">Rabb Da Radio (Rs10)</option>
+        <option value="12">Sarvann (Rs12)</option>
+        <option value="8">SHADAA (Rs8)</option>
+		<option value="10">Telivison(Rs10)</option>
+        <option value="12">AGE-MUNDE UK DE (Rs12)</option>
+        <option value="8">People(Rs8)</option>
+		<option value="10">Powers (Rs10)</option>
+        <option value="12">America (Rs12)</option>
+        <option value="8">The Family Man (Rs8)</option>
+		<option value="10">SHAITAAN (Rs10)</option>
+        <option value="12">Forgotten Army(Rs12)</option>
+        <option value="8">Panchayat (Rs8)</option>
+		<option value="10">ASUR (Rs10)</option>
+        <option value="12">Patal (Rs12)</option>
+        <option value="8">Special OPS (Rs8)</option>
+		<option value="10">Breath (Rs10)</option>
+        <option value="12">SCAM (Rs12)</option>
+        <option value="8">Radhe (Rs8)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div id="seat" class="seat"></div>
+        <small class="status" style="font-size: 1em;">N/A</small>
+      </li>
+      <li>
+        <div id="seat" class="seat selected"></div>
+        <small class="status" style="font-size: 1em;">Selected</small>
+      </li>
+      <li>
+        <div id="seat" class="seat occupied"></div>
+        <small class="status" style="font-size: 1em;">Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat occupied"></div>
+        <div id="seat" class="seat occupied"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat occupied"></div>
+        <div id="seat" class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat occupied"></div>
+        <div id="seat" class="seat occupied"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat"></div>
+        <div id="seat" class="seat occupied"></div>
+        <div id="seat" class="seat occupied"></div>
+        <div id="seat" class="seat occupied"></div>
+        <div id="seat" class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text" style="font-size: 1em;margin:0px 0px 15px 0px">
+      You have selected <span id="count">0</span> seats for a price of Rs<span
+        id="total"
+        >0</span
+      >
+    </p>
+
+    <a href="movies.html">
+      <button class="btn-home">
+        Home
+      </button>
+    </a>
+    
+
+    <script>
+     
+      var count=0;
+      var seats=document.getElementsByClassName("seat");
+      for(var i=0;i<seats.length;i++){
+        var item=seats[i];
+        
+        item.addEventListener("click",(event)=>{
+          var price= document.getElementById("movie").value;
+
+          if (!event.target.classList.contains('occupied') && !event.target.classList.contains('selected') ){
+          count++;
+          
+          var total=count*price;
+          event.target.classList.add("selected");
+          document.getElementById("count").innerText=count;
+          document.getElementById("total").innerText=total;
+
+          }
+        })
+      }
+    </script>
+  </body>
+</html>
